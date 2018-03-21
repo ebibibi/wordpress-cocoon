@@ -1,7 +1,5 @@
 FROM wordpress
 
-MAINTAINER Masahiko Ebisuda
-
 # ------------------------
 # Enable mod_rewrite
 # ------------------------
