@@ -43,7 +43,7 @@ RUN wget https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.8.1.zip
 
 
 # プラグインをWordPressのプラグインディレクトリに解凍する
-RUN unzip './*.zip' -d /usr/src/wordpress/wp-content/plugins
+RUN unzip -o './*.zip' -d /usr/src/wordpress/wp-content/plugins
 RUN chown -R www-data:www-data /usr/src/wordpress/wp-content
 
 # 一時ダウンロード先内の全ファイルの削除
