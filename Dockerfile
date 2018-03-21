@@ -32,7 +32,6 @@ RUN wget https://downloads.wordpress.org/plugin/bbpress.2.5.14.zip
 RUN wget https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.1.1.zip
 RUN wget https://downloads.wordpress.org/plugin/google-sitemap-generator.4.0.9.zip
 RUN wget https://downloads.wordpress.org/plugin/jetpack.5.9.zip
-RUN wget https://downloads.wordpress.org/plugin/regenerate-thumbnails.zip
 RUN wget https://downloads.wordpress.org/plugin/simple-feature-requests.zip
 RUN wget https://downloads.wordpress.org/plugin/pubsubhubbub.2.2.1.zip
 RUN wget https://downloads.wordpress.org/plugin/wordfence.7.1.1.zip
