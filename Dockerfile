@@ -1,8 +1,5 @@
 FROM wordpress
 
-# ------------------------
-# Enable mod_rewrite
-# ------------------------
 RUN a2enmod rewrite
 
 # ------------------------
