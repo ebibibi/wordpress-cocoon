@@ -14,7 +14,7 @@ EXPOSE 2222
 
 COPY init_container.sh /bin/
 RUN chmod 755 /bin/init_container.sh 
-CMD ["sh", "/bin/init_container.sh"]
+#CMD ["sh", "/bin/init_container.sh"]
 
 #--------------------------
 # Install wordpress plugins
@@ -73,3 +73,10 @@ RUN rm -rf '/tmp/wp-themes'
 
 # 戻る
 WORKDIR /var/www/html
+
+
+#------------------------
+# 実行
+#------------------------
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["apache2-foreground"]
