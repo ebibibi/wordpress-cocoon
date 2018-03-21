@@ -3,7 +3,7 @@ FROM wordpress
 RUN a2enmod rewrite
 
 # ------------------------
-# SSH Server support
+# SSH Server support(not enabled yet)
 # ------------------------
 RUN apt-get update \ 
   && apt-get install -y --no-install-recommends openssh-server \
@@ -78,5 +78,6 @@ WORKDIR /var/www/html
 #------------------------
 # 実行
 #------------------------
+COPY docker-entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["apache2-foreground"]
