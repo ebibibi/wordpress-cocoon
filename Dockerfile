@@ -38,7 +38,7 @@ RUN wget https://downloads.wordpress.org/plugin/pubsubhubbub.2.2.1.zip
 RUN wget https://downloads.wordpress.org/plugin/wordfence.7.1.1.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-fastest-cache.0.8.7.8.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.8.1.zip
-RUN wbet https://downloads.wordpress.org/plugin/wp-azure-offload.1.0.zip
+RUN wget https://downloads.wordpress.org/plugin/wp-azure-offload.1.0.zip
 
 
 
