@@ -39,8 +39,7 @@ RUN wget https://downloads.wordpress.org/plugin/wp-fastest-cache.0.8.7.8.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.8.1.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-azure-offload.1.0.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-mail-smtp.zip
-
-
+RUN wget https://downloads.wordpress.org/plugin/wordpress-social-login.zip
 
 
 
