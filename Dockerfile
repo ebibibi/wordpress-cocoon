@@ -24,7 +24,7 @@ RUN wget https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.8.1.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-azure-offload.1.0.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-mail-smtp.zip
 RUN wget https://downloads.wordpress.org/plugin/wordpress-social-login.zip
-RUN wget https://downloads.wordpress.org/plugin/dark-mode.1.8.4.zip
+RUN wget https://downloads.wordpress.org/plugin/pixabay-images.zip
 
 
 
