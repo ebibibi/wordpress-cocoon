@@ -13,12 +13,12 @@ WORKDIR /tmp/wp-plugins
 # プラグインファイルをダウンロード
 RUN wget https://downloads.wordpress.org/plugin/akismet.4.0.3.zip
 RUN wget https://downloads.wordpress.org/plugin/bbpress.2.5.14.zip
-RUN wget https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.1.1.zip
+RUN wget https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.1.3.zip
 RUN wget https://downloads.wordpress.org/plugin/google-sitemap-generator.4.0.9.zip
-RUN wget https://downloads.wordpress.org/plugin/jetpack.5.9.zip
+RUN wget https://downloads.wordpress.org/plugin/jetpack.6.0.zip
 RUN wget https://downloads.wordpress.org/plugin/simple-feature-requests.zip
 RUN wget https://downloads.wordpress.org/plugin/pubsubhubbub.2.2.1.zip
-RUN wget https://downloads.wordpress.org/plugin/wordfence.7.1.1.zip
+RUN wget https://downloads.wordpress.org/plugin/wordfence.7.1.3.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-fastest-cache.0.8.7.8.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.8.1.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-azure-offload.1.0.zip
