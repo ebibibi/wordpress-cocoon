@@ -19,7 +19,7 @@ RUN wget https://downloads.wordpress.org/plugin/jetpack.6.0.zip
 RUN wget https://downloads.wordpress.org/plugin/simple-feature-requests.zip
 RUN wget https://downloads.wordpress.org/plugin/pubsubhubbub.2.2.1.zip
 RUN wget https://downloads.wordpress.org/plugin/wordfence.7.1.3.zip
-RUN wget https://downloads.wordpress.org/plugin/wp-fastest-cache.0.8.7.8.zip
+RUN wget https://downloads.wordpress.org/plugin/wp-fastest-cache.0.8.7.9.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.8.1.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-azure-offload.1.0.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-mail-smtp.zip
