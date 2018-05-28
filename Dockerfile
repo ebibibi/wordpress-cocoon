@@ -46,7 +46,7 @@ WORKDIR /var/www/html
 # テーマファイルの一時ダウンロード先
 WORKDIR /tmp/wp-themes
 
-RUN cocoonversion=0.6.3.2
+ENV cocoonversion=0.6.3.2
 
 # テーマファイルをダウンロード
 RUN wget https://github.com/ebibibi/appservice-wordpress/raw/master/Themes/cocoon-child-master.zip
