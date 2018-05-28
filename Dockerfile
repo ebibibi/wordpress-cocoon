@@ -46,13 +46,16 @@ WORKDIR /var/www/html
 # テーマファイルの一時ダウンロード先
 WORKDIR /tmp/wp-themes
 
+RUN cocoonversion=0.6.3.2
+
 # テーマファイルをダウンロード
 RUN wget https://github.com/ebibibi/appservice-wordpress/raw/master/Themes/cocoon-child-master.zip
-RUN wget https://github.com/ebibibi/appservice-wordpress/raw/master/Themes/cocoon-master-0.2.4.zip
+RUN wget https://github.com/yhira/cocoon/archive/${cocoonversion}.zip
 
 
 # テーマをWordPressのテーマディレクトリに解凍する
 RUN unzip './*.zip' -d /usr/src/wordpress/wp-content/themes
+RUN mv /usr/src/wordpress/wp-contents/themes/cocoon-${cocoonversion} /usr/src/wordpress/wp-contents/themes/cocoon-master 
 RUN chown -R www-data:www-data /usr/src/wordpress/wp-content
 
 # 一時ダウンロード先内の全ファイルの削除
