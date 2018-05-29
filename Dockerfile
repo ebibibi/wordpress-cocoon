@@ -11,7 +11,7 @@ RUN apt-get -y --force-yes -o Dpkg::Options::="--force-confdef" install wget unz
 WORKDIR /tmp/wp-plugins
 
 # プラグインファイルをダウンロード
-RUN wget https://downloads.wordpress.org/plugin/akismet.4.0.3.zip
+RUN wget https://downloads.wordpress.org/plugin/akismet.4.0.7.zip
 RUN wget https://downloads.wordpress.org/plugin/bbpress.2.5.14.zip
 RUN wget https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.1.3.zip
 RUN wget https://downloads.wordpress.org/plugin/google-sitemap-generator.4.0.9.zip
