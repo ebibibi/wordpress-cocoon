@@ -4,3 +4,6 @@ language: bash
 script:
  - test/setup_tests.sh
  - test/tests.sh
+before_install:
+  - chmod +x test/setup_tests.sh
+  - chmod +x test/tests.sh
