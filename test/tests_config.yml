@@ -9,5 +9,5 @@ fileExistenceTests:
 metadataTest:
   labels:
     - key: maintainer
-      value: "Florian Lopes <florian.lopes@outlook.com>"
+      value: "Masahiko Ebisuda<ebibibi@gmail.com>"
   entrypoint: ["/entrypoint.sh"]
