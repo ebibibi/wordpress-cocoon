@@ -1,7 +1,7 @@
 FROM wordpress
 
 
-LABEL  maintainer "Masahiko Ebisuda<ebibibi@gmail.com>"
+LABEL maintainer "Masahiko Ebisuda<ebibibi@gmail.com>"
 
 #--------------------------
 # Install wordpress plugins
