@@ -1,6 +1,6 @@
 sudo: required
 dist: trusty
-
+language: bash
 script:
  - test/setup_tests.sh
  - test/tests.sh
