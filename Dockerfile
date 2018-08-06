@@ -59,7 +59,6 @@ RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/cocoon-ma
 
 # テーマをWordPressのテーマディレクトリに解凍する
 RUN unzip './*.zip' -d /usr/src/wordpress/wp-content/themes
-RUN mv /usr/src/wordpress/wp-content/themes/cocoon-${cocoonversion} /usr/src/wordpress/wp-content/themes/cocoon-master 
 RUN chown -R www-data:www-data /usr/src/wordpress/wp-content
 
 # 一時ダウンロード先内の全ファイルの削除
