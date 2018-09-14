@@ -51,12 +51,12 @@ WORKDIR /var/www/html
 # テーマファイルの一時ダウンロード先
 WORKDIR /tmp/wp-themes
 
-ENV cocoonversion=1.1.6.1
+ENV cocoonversion=1.1.9
 
 # テーマファイルをダウンロード
 RUN wget https://github.com/ebibibi/appservice-wordpress/raw/master/Themes/cocoon-child-master.zip
 RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/cocoon-master-${cocoonversion}.zip
-
+# get latest them from https://wp-cocoon.com/downloads/
 
 # テーマをWordPressのテーマディレクトリに解凍する
 RUN unzip './*.zip' -d /usr/src/wordpress/wp-content/themes
