@@ -31,6 +31,7 @@ RUN wget https://downloads.wordpress.org/plugin/pixabay-images.zip
 RUN wget https://downloads.wordpress.org/plugin/drift.1.8.4.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-mail-smtp.zip
 RUN wget https://downloads.wordpress.org/plugin/announcer.3.0.zip
+RUN wget https://downloads.wordpress.org/plugin/really-simple-ssl.3.1.5.zip
 
 
 
