@@ -14,24 +14,22 @@ RUN apt-get -y --force-yes -o Dpkg::Options::="--force-confdef" install wget unz
 WORKDIR /tmp/wp-plugins
 
 # プラグインファイルをダウンロード
-RUN wget https://downloads.wordpress.org/plugin/akismet.4.0.8.zip
-RUN wget https://downloads.wordpress.org/plugin/bbpress.2.5.14.zip
-RUN wget https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.3.2.zip
-RUN wget https://downloads.wordpress.org/plugin/google-sitemap-generator.4.0.9.zip
-RUN wget https://downloads.wordpress.org/plugin/jetpack.6.5.zip
-RUN wget https://downloads.wordpress.org/plugin/simple-feature-requests.zip
-RUN wget https://downloads.wordpress.org/plugin/pubsubhubbub.3.0.0.zip
-RUN wget https://downloads.wordpress.org/plugin/wordfence.7.1.12.zip
-RUN wget https://downloads.wordpress.org/plugin/wp-fastest-cache.0.8.8.4.zip
-RUN wget https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.8.1.zip
-RUN wget https://downloads.wordpress.org/plugin/wp-azure-offload.1.0.zip
-RUN wget https://downloads.wordpress.org/plugin/wp-mail-smtp.zip
-RUN wget https://downloads.wordpress.org/plugin/wordpress-social-login.zip
-RUN wget https://downloads.wordpress.org/plugin/pixabay-images.zip
-RUN wget https://downloads.wordpress.org/plugin/drift.1.8.4.zip
-RUN wget https://downloads.wordpress.org/plugin/wp-mail-smtp.zip
+RUN wget https://downloads.wordpress.org/plugin/akismet.4.1.1.zip
 RUN wget https://downloads.wordpress.org/plugin/announcer.3.0.zip
+RUN wget https://downloads.wordpress.org/plugin/drift.1.8.4.zip
+RUN wget https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.6.3.zip
+RUN wget https://downloads.wordpress.org/plugin/google-sitemap-generator.4.1.0.zip
+RUN wget https://downloads.wordpress.org/plugin/jetpack.7.1.1.zip
+RUN wget https://downloads.wordpress.org/plugin/pixabay-images.zip
 RUN wget https://downloads.wordpress.org/plugin/really-simple-ssl.3.1.5.zip
+RUN wget https://downloads.wordpress.org/plugin/simple-feature-requests.zip
+RUN wget https://downloads.wordpress.org/plugin/pubsubhubbub.3.0.2.zip
+RUN wget https://downloads.wordpress.org/plugin/wordfence.7.2.3.zip
+RUN wget https://downloads.wordpress.org/plugin/wordpress-social-login.zip
+RUN wget https://downloads.wordpress.org/plugin/wp-azure-offload.1.0.zip
+RUN wget https://downloads.wordpress.org/plugin/wp-fastest-cache.0.8.9.1.zip
+RUN wget https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.8.2.zip
+RUN wget https://downloads.wordpress.org/plugin/wp-mail-smtp.zip
 
 
 
@@ -53,7 +51,7 @@ WORKDIR /var/www/html
 # テーマファイルの一時ダウンロード先
 WORKDIR /tmp/wp-themes
 
-ENV cocoonversion=1.1.9
+ENV cocoonversion=1.6.8
 
 # テーマファイルをダウンロード
 RUN wget https://github.com/ebibibi/appservice-wordpress/raw/master/Themes/cocoon-child-master.zip
