@@ -21,7 +21,7 @@ RUN wget https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.6.3.zip
 RUN wget https://downloads.wordpress.org/plugin/google-sitemap-generator.4.1.0.zip
 RUN wget https://downloads.wordpress.org/plugin/jetpack.7.1.1.zip
 RUN wget https://downloads.wordpress.org/plugin/pixabay-images.zip
-RUN wget https://downloads.wordpress.org/plugin/really-simple-ssl.3.1.5.zip
+#RUN wget https://downloads.wordpress.org/plugin/really-simple-ssl.3.1.5.zip
 RUN wget https://downloads.wordpress.org/plugin/simple-feature-requests.zip
 RUN wget https://downloads.wordpress.org/plugin/pubsubhubbub.3.0.2.zip
 RUN wget https://downloads.wordpress.org/plugin/wordfence.7.2.3.zip
