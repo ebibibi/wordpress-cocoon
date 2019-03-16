@@ -1,4 +1,7 @@
 #!/bin/bash
+
+service ssh start
+
 set -e
 
 if [ -n "$MYSQL_PORT_3306_TCP" ]; then
