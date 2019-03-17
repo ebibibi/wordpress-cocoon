@@ -74,6 +74,7 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
 }
 EOPHP
 
+
 #	cat << 'EOPHP' >> /usr/src/wordpress/wp-config.php
 #
 #// If we're behind a proxy server and using HTTPS, we need to alert Wordpress of that fact
