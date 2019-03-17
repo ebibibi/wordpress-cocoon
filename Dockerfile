@@ -23,7 +23,7 @@ RUN apt-get -y --force-yes -o Dpkg::Options::="--force-confdef" install wget unz
 WORKDIR /tmp/wp-plugins
 
 # プラグインファイルをダウンロード
-# RUN wget https://downloads.wordpress.org/plugin/really-simple-ssl.3.1.5.zip
+RUN wget https://downloads.wordpress.org/plugin/really-simple-ssl.3.1.5.zip
 
 RUN wget https://downloads.wordpress.org/plugin/akismet.4.1.1.zip
 RUN wget https://downloads.wordpress.org/plugin/announcer.3.0.zip
