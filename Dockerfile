@@ -65,6 +65,10 @@ RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/cocoon-ch
 RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/cocoon-master-2.3.5.1.zip
 # get latest theme from https://wp-cocoon.com/downloads/
 
+RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/lionmedia-200.zip
+RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/lionmedia-child.zip
+
+
 # テーマをWordPressのテーマディレクトリに解凍する
 RUN unzip './*.zip' -d /usr/src/wordpress/wp-content/themes
 RUN chown -R www-data:www-data /usr/src/wordpress/wp-content
