@@ -68,6 +68,9 @@ RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/cocoon-ma
 RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/lionmedia-200.zip
 RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/lionmedia-child.zip
 
+RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/luxeritas-3.20.3.zip
+RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/luxech-3.0.4.zip
+
 
 # テーマをWordPressのテーマディレクトリに解凍する
 RUN unzip './*.zip' -d /usr/src/wordpress/wp-content/themes
