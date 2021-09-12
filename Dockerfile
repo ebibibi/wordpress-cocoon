@@ -78,7 +78,7 @@ WORKDIR /var/www/html
 #------------------------
 # Create php.ini
 #------------------------
-COPY php.ini /usr/local/etc/php/conf.d/php.ini
+#COPY php.ini /usr/local/etc/php/conf.d/php.ini
 
 # 戻る
 WORKDIR /var/www/html
