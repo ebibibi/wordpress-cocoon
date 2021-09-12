@@ -39,6 +39,7 @@ RUN wget https://downloads.wordpress.org/plugin/wp-fastest-cache.0.9.3.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-mail-smtp.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.9.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-postratings.1.89.zip
+RUN wget https://downloads.wordpress.org/plugin/edump.zip
 
 
 
