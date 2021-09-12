@@ -83,6 +83,12 @@ WORKDIR /var/www/html
 # 戻る
 WORKDIR /var/www/html
 
+
+#--------------------------
+# Install emacs
+#--------------------------
+RUN apt-get -y --force-yes -o Dpkg::Options::="--force-confdef" install emacs
+
 #------------------------
 # 実行
 #------------------------
