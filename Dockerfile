@@ -23,12 +23,12 @@ RUN apt-get -y --force-yes -o Dpkg::Options::="--force-confdef" install wget unz
 WORKDIR /tmp/wp-plugins
 
 # プラグインファイルをダウンロード
-RUN wget https://downloads.wordpress.org/plugin/akismet.4.1.11.zip
+RUN wget https://downloads.wordpress.org/plugin/akismet.4.1.12.zip
 RUN wget https://downloads.wordpress.org/plugin/drift.zip
 RUN wget https://downloads.wordpress.org/plugin/google-sitemap-generator.4.1.1.zip
-RUN wget https://downloads.wordpress.org/plugin/jetpack.10.0.zip
+RUN wget https://downloads.wordpress.org/plugin/jetpack.10.1.zip
 RUN wget https://downloads.wordpress.org/plugin/pixabay-images.zip
-RUN wget https://downloads.wordpress.org/plugin/really-simple-ssl.5.0.10.zip
+RUN wget https://downloads.wordpress.org/plugin/really-simple-ssl.5.1.0.zip
 RUN wget https://downloads.wordpress.org/plugin/wordfence.7.5.5.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-azure-offload.2.0.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.9.zip
