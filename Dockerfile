@@ -24,19 +24,13 @@ WORKDIR /tmp/wp-plugins
 
 # プラグインファイルをダウンロード
 RUN wget https://downloads.wordpress.org/plugin/akismet.4.1.11.zip
-RUN wget https://downloads.wordpress.org/plugin/announcer.5.2.zip
 RUN wget https://downloads.wordpress.org/plugin/drift.zip
-RUN wget https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.2.3.zip
 RUN wget https://downloads.wordpress.org/plugin/google-sitemap-generator.4.1.1.zip
 RUN wget https://downloads.wordpress.org/plugin/jetpack.10.0.zip
 RUN wget https://downloads.wordpress.org/plugin/pixabay-images.zip
 RUN wget https://downloads.wordpress.org/plugin/really-simple-ssl.5.0.10.zip
-RUN wget https://downloads.wordpress.org/plugin/pubsubhubbub.3.1.0.zip
 RUN wget https://downloads.wordpress.org/plugin/wordfence.7.5.5.zip
-RUN wget https://downloads.wordpress.org/plugin/wordpress-social-login.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-azure-offload.2.0.zip
-RUN wget https://downloads.wordpress.org/plugin/wp-fastest-cache.0.9.3.zip
-RUN wget https://downloads.wordpress.org/plugin/wp-mail-smtp.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.9.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-postratings.1.89.zip
 RUN wget https://downloads.wordpress.org/plugin/edump.zip
@@ -65,12 +59,6 @@ RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/cocoon-ch
 RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/cocoon-master-2.3.5.1.zip
 # get latest theme from https://wp-cocoon.com/downloads/
 
-RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/lionmedia-200.zip
-RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/lionmedia-child.zip
-
-RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/luxeritas-3.20.3.zip
-RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/luxech-3.0.4.zip
-
 
 # テーマをWordPressのテーマディレクトリに解凍する
 RUN unzip './*.zip' -d /usr/src/wordpress/wp-content/themes
@@ -95,7 +83,7 @@ WORKDIR /var/www/html
 #--------------------------
 # Install emacs
 #--------------------------
-RUN apt-get -y --force-yes -o Dpkg::Options::="--force-confdef" install emacs
+#RUN apt-get -y --force-yes -o Dpkg::Options::="--force-confdef" install emacs
 
 #------------------------
 # 実行
