@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: mvpwebsites.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_44c826da395e45fc9d682221623f3deb }}/ebibibi/wordpress-cocoon:${{ github.sha }}
+        tags: mvpwebsites.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_44c826da395e45fc9d682221623f3deb }}/ebibibi/wordpress-cocoon:latest
         file: ./Dockerfile
 
   deploy:
@@ -48,4 +48,4 @@ jobs:
         app-name: 'cloudebisudacom'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_5d283b77b44e40088f3bef2ae9fcda04 }}
-        images: 'mvpwebsites.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_44c826da395e45fc9d682221623f3deb }}/ebibibi/wordpress-cocoon:${{ github.sha }}'
+        images: 'mvpwebsites.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_44c826da395e45fc9d682221623f3deb }}/ebibibi/wordpress-cocoon:latest'
