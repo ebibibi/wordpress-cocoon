@@ -32,7 +32,6 @@ RUN wget https://downloads.wordpress.org/plugin/really-simple-ssl.5.1.0.zip
 RUN wget https://downloads.wordpress.org/plugin/wordfence.7.5.5.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-azure-offload.2.0.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.9.zip
-RUN wget https://downloads.wordpress.org/plugin/wp-postratings.1.89.zip
 RUN wget https://downloads.wordpress.org/plugin/edump.zip
 RUN wget https://downloads.wordpress.org/plugin/feedzy-rss-feeds.zip
 
