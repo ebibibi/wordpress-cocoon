@@ -35,6 +35,7 @@ RUN wget https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.9.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-postratings.1.89.zip
 RUN wget https://downloads.wordpress.org/plugin/edump.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-rss-aggregator.4.19.1.zip
+RUN wget https://downloads.wordpress.org/plugin/feedzy-rss-feeds.zip
 
 
 
