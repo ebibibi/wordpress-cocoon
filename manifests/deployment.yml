@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "env1aksvpc3eu2iyyh4i-dbd8"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "env1aksvpc3eu2iyyh4i-dbd8"
+  template:
+    metadata:
+      labels:
+        app: "env1aksvpc3eu2iyyh4i-dbd8"
+    spec:
+      containers:
+        - name: "env1aksvpc3eu2iyyh4i-dbd8"
+          image: "env1acrvpc3eu2iyyh4i.azurecr.io/env1aksvpc3eu2iyyh4i"
+          ports:
+          - containerPort: 2222
