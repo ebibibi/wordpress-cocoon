@@ -23,6 +23,7 @@ RUN apt-get -y --force-yes -o Dpkg::Options::="--force-confdef" install wget unz
 WORKDIR /tmp/wp-plugins
 
 # プラグインファイルをダウンロード
+RUN wget https://downloads.wordpress.org/plugin/application-passwords-enable.1.0.zip
 RUN wget https://downloads.wordpress.org/plugin/akismet.4.1.12.zip
 RUN wget https://downloads.wordpress.org/plugin/drift.zip
 RUN wget https://downloads.wordpress.org/plugin/google-sitemap-generator.4.1.1.zip
