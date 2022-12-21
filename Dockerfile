@@ -73,7 +73,7 @@ WORKDIR /var/www/html
 #-----------------------------
 # Enable Application Passwords
 #-----------------------------
-RUN echo 'add_filter( 'wp_is_application_passwords_available', '__return_true' );' >> /var/www/html/wp-content/themes/cocoon-master/functions.php
+RUN echo 'add_filter( 'wp_is_application_passwords_available', '__return_true' );' >> /usr/src/wordpress/wp-content/themes/cocoon-master/functions.php
 
 #------------------------
 # Create php.ini
@@ -94,5 +94,5 @@ WORKDIR /var/www/html
 #------------------------
 COPY docker-entrypoint.sh /entrypoint.sh
 RUN chmod 755 /entrypoint.sh 
-ENTRYPOINT ["/entrypoint.sh"]
+#ENTRYPOINT ["/entrypoint.sh"]
 CMD ["apache2-foreground"]
