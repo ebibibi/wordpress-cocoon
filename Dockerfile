@@ -73,7 +73,7 @@ WORKDIR /var/www/html
 #-----------------------------
 # Enable Application Passwords
 #-----------------------------
-RUN echo 'add_filter( 'wp_is_application_passwords_available', '__return_true' );' >> /usr/src/wordpress/wp-content/themes/cocoon-master/functions.php
+#RUN echo 'add_filter( 'wp_is_application_passwords_available', '__return_true' );' >> /usr/src/wordpress/wp-content/themes/cocoon-master/functions.php
 
 
 #------------------------
