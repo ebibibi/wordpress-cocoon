@@ -56,7 +56,7 @@ WORKDIR /tmp/wp-themes
 
 # テーマファイルをダウンロード
 RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/cocoon-child-master-1.1.3.zip
-RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/cocoon-master-2.3.5.1.zip
+RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/cocoon-master-2.5.4.4.zip
 # get latest theme from https://wp-cocoon.com/downloads/
 
 
