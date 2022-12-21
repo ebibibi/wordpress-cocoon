@@ -1,0 +1,31 @@
+name: Build and deploy container image to Azure Container Registry
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: 'ubuntu-latest'
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v1
+
+    - name: Log in to registry
+      uses: docker/login-action@v1
+      with:
+        registry: https://mvpwebsites.azurecr.io/
+        username: ${{ secrets.AzureAppService_ContainerUsername_44c826da395e45fc9d682221623f3deb }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_fa774c3c26694f148b53dd5ad4466bc3 }}
+
+    - name: Build and push container image to registry
+      uses: docker/build-push-action@v2
+      with:
+        push: true
+        tags: mvpwebsites.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_44c826da395e45fc9d682221623f3deb }}/ebibibi/wordpress-cocoon:latest
+        file: ./Dockerfile
