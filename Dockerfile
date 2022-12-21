@@ -40,7 +40,7 @@ RUN wget https://downloads.wordpress.org/plugin/feedzy-rss-feeds.zip
 # プラグインをWordPressのプラグインディレクトリに解凍する
 RUN unzip -o './*.zip' -d /usr/src/wordpress/wp-content/plugins
 RUN chown -R www-data:www-data /usr/src/wordpress/wp-content
-
+5
 # 一時ダウンロード先内の全ファイルの削除
 RUN rm -rf '/tmp/wp-plugins'
 
@@ -56,7 +56,7 @@ WORKDIR /tmp/wp-themes
 
 # テーマファイルをダウンロード
 RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/cocoon-child-master-1.1.3.zip
-RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/cocoon-master-2.3.5.1.zip
+RUN wget https://github.com/ebibibi/wordpress-cocoon/raw/master/Themes/cocoon-master-2.5.4.4.zip
 # get latest theme from https://wp-cocoon.com/downloads/
 
 
