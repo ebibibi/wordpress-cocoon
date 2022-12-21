@@ -40,7 +40,7 @@ RUN wget https://downloads.wordpress.org/plugin/google-sitemap-generator.4.1.7.z
 # プラグインをWordPressのプラグインディレクトリに解凍する
 RUN unzip -o './*.zip' -d /usr/src/wordpress/wp-content/plugins
 RUN chown -R www-data:www-data /usr/src/wordpress/wp-content
-5
+
 # 一時ダウンロード先内の全ファイルの削除
 RUN rm -rf '/tmp/wp-plugins'
 
