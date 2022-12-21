@@ -94,5 +94,5 @@ WORKDIR /var/www/html
 #------------------------
 COPY docker-entrypoint.sh /entrypoint.sh
 RUN chmod 755 /entrypoint.sh 
-#ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["apache2-foreground"]
