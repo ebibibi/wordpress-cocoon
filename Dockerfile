@@ -27,7 +27,7 @@ RUN wget https://downloads.wordpress.org/plugin/akismet.5.0.2.zip
 RUN wget https://downloads.wordpress.org/plugin/drift.zip
 RUN wget https://downloads.wordpress.org/plugin/jetpack.11.6.zip
 RUN wget https://downloads.wordpress.org/plugin/pixabay-images.zip
-RUN wget https://downloads.wordpress.org/plugin/really-simple-ssl.6.0.12.zip
+RUN wget https://downloads.wordpress.org/plugin/really-simple-ssl.6.0.13.zip
 RUN wget https://downloads.wordpress.org/plugin/wordfence.7.8.2.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-azure-offload.2.0.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.9.zip
