@@ -34,7 +34,7 @@ RUN wget https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.9.zip
 RUN wget https://downloads.wordpress.org/plugin/edump.zip
 RUN wget https://downloads.wordpress.org/plugin/feedzy-rss-feeds.zip
 RUN wget https://downloads.wordpress.org/plugin/google-sitemap-generator.4.1.7.zip
-
+RUN wget https://downloads.wordpress.org/plugin/indexnow.zip
 
 
 # プラグインをWordPressのプラグインディレクトリに解凍する
