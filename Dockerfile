@@ -37,7 +37,7 @@ RUN wget https://downloads.wordpress.org/plugin/google-sitemap-generator.4.1.7.z
 RUN wget https://downloads.wordpress.org/plugin/indexnow.zip
 RUN wget https://downloads.wordpress.org/plugin/press-this.1.1.1.zip
 RUN wget https://downloads.wordpress.org/plugin/wp-fastest-cache.1.0.9.zip
-RUN wget https://downloads.wordpress.org/plugin/flying-scripts.zip
+
 
 
 
