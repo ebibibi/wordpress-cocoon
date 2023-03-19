@@ -75,6 +75,9 @@ RUN rm -rf '/tmp/wp-themes'
 # 戻る
 WORKDIR /var/www/html
 
+# ads.txtの設置
+COPY ads.txt /var/www/html/ads.txt
+
 #-----------------------------
 # Enable Application Passwords
 #-----------------------------
