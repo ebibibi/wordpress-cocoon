@@ -3,7 +3,7 @@ name: Build and deploy container image to Azure Container Registry
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 jobs:
